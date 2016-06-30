@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>NotyMVC</id>
+    <version>1.1.0</version>
+    <title>Noty Notification MVC Plugin</title>
+    <authors>James Russo</authors>
+    <owners></owners>
+    <description>
+      This package uses the latest version of Noty (jQuery) and TempData request to "queue" up a message that will automatically be presented to the user upon redirection.
+      With a simple extension method (.WithNotification()) you can give great user feedback with minimal effort.
+      
+      In addition, you have access to a javascript method "ShowNotification" which follows the same defaults as the extension method.
+      
+      All you need to do is add Html.Partial("NotyNotifications") to your layout file(s) and your all set.  For the best experience, add the reference to you Shared Layout (master) page
+      and never worry about it again!
+    </description>
+    <releaseNotes>
+      Version 1.1.0
+      -Initial Release
+    </releaseNotes>
+    <summary>
+
+    </summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/james-russo/NotyNotification</projectUrl>
+    <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://opensource.org/licenses/mit-license.php</licenseUrl>
+    <copyright>Copyright  2016</copyright>
+    <dependencies>
+      <group targetFramework="net35">
+        <dependency id="microsoft.aspnet.mvc" version="3.0.20105.1"></dependency>
+        <dependency id="jquery.noty"  />
+      </group>
+      <group targetFramework="net40">
+        <dependency id="microsoft.aspnet.mvc" version="4.0.40804"></dependency>
+        <dependency id="jquery.noty"  />
+      </group>
+      <group targetFramework="net45">
+        <dependency id="microsoft.aspnet.mvc" version="5.0.0"></dependency>
+        <dependency id="jquery.noty"  />
+      </group>
+    </dependencies>
+    <references></references>
+    <tags></tags>
+  </metadata>
+  <files>
+    <file src="lib\" target="lib" />
+    <file src="..\NotificationPlugin\bin\Debug\NotyNotification.dll" target="lib"/>
+    <file src="tools\" target="tools" />
+    <file src="content\" target="content" />
+  </files>
+</package>
